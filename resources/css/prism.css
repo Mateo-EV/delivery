@@ -1,0 +1,286 @@
+p{
+    @apply tracking-wider text-sm text-gray-500
+}
+
+.h1{
+    @apply text-6xl font-black
+}
+
+.h2{
+    @apply text-5xl font-extrabold
+}
+
+.h3{
+    @apply text-4xl font-extrabold
+}
+
+.h4{
+    @apply text-3xl font-extrabold
+}
+
+.h5{
+    @apply text-2xl font-extrabold
+}
+
+.h6{
+    @apply text-xl font-extrabold
+}
+
+.jet-input {
+    @apply border-gray-300 focus:border-main focus:ring focus:ring-main focus:ring-opacity-25 rounded-md shadow-sm transition-all;
+}
+
+.jet-input.error {
+    @apply border-red-500 focus:border-red-500 focus:ring-red-300 focus:ring-opacity-50;
+}
+
+.jet-button{
+    @apply px-4 py-2 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest focus:ring focus:ring-main focus:ring-opacity-25 transition;
+}
+
+.jet-button:disabled{
+    @apply opacity-25;
+}
+
+.alert {
+    @apply border rounded bg-white py-4 px-6 text-sm
+}
+
+.alert a {
+    @apply font-extrabold text-black text-base transition ease-in-out duration-300
+}
+
+.alert a:hover {
+    @apply opacity-75
+}
+
+.alert-default {
+    @apply bg-gray-100 border-gray-200 text-gray-500
+}
+    
+.alert-default a {
+    @apply text-teal-700
+}
+
+.alert-light {
+    @apply bg-gray-100 border-gray-300 text-gray-600
+}
+
+.alert-light a {
+    @apply text-gray-700 
+}
+
+.alert-dark {
+    @apply bg-gray-700 border-gray-900 text-white
+}
+
+.alert-dark a {
+    @apply text-gray-500
+}
+
+.alert-success {
+    @apply bg-green-200 border-green-300 text-green-500
+}
+    
+.alert-success a {
+    @apply text-green-700 
+}
+
+.alert-error {
+    @apply bg-red-200 border-red-300 text-red-500
+}
+    
+.alert-error a {
+    @apply text-red-700 
+}
+
+.alert-close {
+    @apply flex flex-row-reverse
+}
+
+.alert-close button.alert-btn-close {
+    @apply transition ease-in-out duration-300
+}
+
+.alert-close button.alert-btn-close:hover {
+    @apply opacity-75 
+}
+
+.alert-close span {
+    @apply flex-1 
+}
+
+.badge {
+    padding: 2px 0;
+    @apply px-2
+}
+
+.badge-primary {
+    @apply bg-teal-200 border border-teal-300 text-teal-600 rounded lowercase
+}
+
+.btn-shadow {
+    @apply text-center capitalize bg-teal-400 block py-2 px-5 rounded text-white transition-all ease-in-out duration-300 shadow-md
+}
+
+.btn-shadow:hover {
+    @apply shadow-lg
+}
+
+.btn {
+    @apply text-center capitalize bg-teal-200 block py-2 px-5 rounded text-teal-600 transition-all ease-in-out duration-300
+}
+
+.btn:hover {
+    @apply bg-teal-300 text-teal-800
+}
+
+.btn-indigo {
+    @apply text-center capitalize bg-indigo-500 text-indigo-100 block py-2 px-5 rounded transition-all ease-in-out duration-300
+}
+
+.btn-indigo:hover {
+    @apply bg-indigo-600 text-indigo-200
+}
+
+.btn-info {
+    @apply text-center capitalize bg-yellow-300 text-yellow-600 block py-2 px-5 rounded transition-all ease-in-out duration-300
+}
+
+.btn-info:hover {
+    @apply bg-yellow-400 text-yellow-600
+}
+
+.btn-danger {
+    @apply text-center capitalize bg-red-300 text-red-600 block py-2 px-5 rounded transition-all ease-in-out duration-300
+}
+
+.btn-danger:hover {
+    @apply bg-red-400 text-red-600
+}
+
+.btn-gray {
+    @apply text-center capitalize bg-gray-100 border border-gray-300 block py-2 px-5 rounded text-gray-600 transition-all ease-in-out duration-300
+}
+
+.btn-gray:hover {
+    @apply bg-white text-gray-800 border border-gray-300
+}
+
+.btn-bs-dark {
+    @apply text-center capitalize bg-gray-900 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+}
+
+.btn-bs-dark:hover {
+    @apply opacity-75
+}
+
+.btn-bs-primary {
+    @apply text-center capitalize bg-indigo-600 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+}
+
+.btn-bs-primary:hover {
+    @apply opacity-75
+}
+
+.btn-bs-secondary {
+    @apply text-center capitalize bg-gray-500 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+}
+
+.btn-bs-secondary:hover {
+    @apply opacity-75
+}
+
+.btn-bs-success {
+    @apply text-center capitalize bg-green-500 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+}
+
+.btn-bs-success:hover {
+    @apply opacity-75
+}
+
+.btn-bs-danger {
+    @apply text-center capitalize bg-red-500 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+}
+
+.btn-bs-danger:hover {
+    @apply opacity-75
+}
+
+.btn-bs-info {
+    @apply text-center capitalize bg-yellow-500 text-white block py-2 px-5 rounded transition-all ease-in-out duration-300
+}
+
+.btn-bs-info:hover {
+    @apply opacity-75
+}
+
+.menu-overflow:focus {
+    outline: none;
+}
+
+.card {
+    @apply rounded bg-white border border-gray-300
+}
+
+.card .card-header {
+    @apply border-b p-6
+}
+
+.card .card-body {
+    @apply p-6
+}
+
+.card .card-footer {
+    @apply border-t p-6
+}
+
+.report-card:hover .card {
+    transform: scale(1.01);
+    @apply shadow-lg border-white
+}
+
+.report-card:hover .footer {
+    @apply p-0 border-0
+}
+
+.report-card .footer, .report-card .card {
+    @apply transition-all ease-in-out duration-300
+}
+
+.h-sidebar{
+    height: calc(100vh - 57px);
+}
+
+@media (min-width: 768px){
+    .h-sidebar{
+        height: calc(100vh - 73px);
+    }
+}
+
+.h-main{
+    min-height: calc(100vh - 57px);
+}
+
+@media (min-width: 768px){
+    .h-main{
+        min-height: calc(100vh - 73px);
+    }
+}
+
+.nav-link{
+    @apply capitalize font-medium text-sm transition ease-in-out duration-500 py-2 cursor-pointer
+}
+
+.nav-link:hover{
+    @apply bg-main bg-opacity-25
+}
+
+.nav-link.active{
+    @apply bg-main bg-opacity-25 p-2 border-main border-l-4
+}
+
+.loading-spin{
+    @apply animate-spin h-5 w-5 mr-3 border-white border-opacity-25 border-2 rounded-full;
+    border-top-color: rgba(255, 255, 255, 1);
+}
