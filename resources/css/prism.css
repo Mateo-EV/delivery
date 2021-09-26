@@ -34,6 +34,10 @@ p{
     @apply border-red-500 focus:border-red-500 focus:ring-red-300 focus:ring-opacity-50;
 }
 
+.jet-input:disabled{
+    @apply opacity-75;
+}
+
 .jet-button{
     @apply px-4 py-2 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest focus:ring focus:ring-main focus:ring-opacity-25 transition;
 }

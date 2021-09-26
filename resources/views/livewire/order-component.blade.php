@@ -6,8 +6,8 @@
             </div>
             <div class="my-2 md:my-0 md:mr-3">
                 <span class="block mb-2">Vista entre fechas</span>
-                <x-jet-input type="date" class="w-full md:w-auto mb-3 md:mb-0" wire:model="startdate" max="{{ $startdate }}" />
-                <x-jet-input type="date" class="w-full md:w-auto" wire:model="enddate"  max="{{ $enddate }}" />
+                <x-jet-input type="date" class="w-full md:w-auto mb-3 md:mb-0" wire:model="startdate" max="{{ $enddate }}" />
+                <x-jet-input type="date" class="w-full md:w-auto" wire:model="enddate"  min="{{ $startdate }}" />
             </div>
             @livewire('order.create')
         </div>
