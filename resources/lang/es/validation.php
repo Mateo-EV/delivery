@@ -148,10 +148,26 @@ return [
 
     'attributes' => [
         'name' => 'nombre',
+        'description' => 'descripción',
         'password' => 'contraseña',
         'telephone' => 'teléfono',
         'license' => 'licencia',
-        'model' => 'modelo'
+        'model' => 'modelo',
+        'code' => 'n° de pedido',
+        'laboratory' => 'laboratorio',
+        'document' => 'tipo de documento',
+        'ndocument' => 'n° de documento',
+        'location' => 'dirección',
+        'address' => 'dirección',
+        'district' => 'distrito',
+        'province' => 'provincia',
+        'reference' => 'referencia',
+        'payment' => 'condición de pago',
+        'channel' => 'medio de cobranza',
+        'currency' => 'moneda',
+        'amount' => 'importe',
+        'arrival' => 'fecha de llegada',
+        'motorcyclist' => 'motorizado',
     ],
 
 ];

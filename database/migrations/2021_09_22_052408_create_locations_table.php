@@ -19,7 +19,7 @@ class CreateLocationsTable extends Migration
             $table->string('province', 100);
             $table->string('district', 100);
             $table->text('reference');
-            $table->foreignUuid('customer_id')->nullable()->constrained()->onDelete('cascade');
+            $table->foreignUuid('customer_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

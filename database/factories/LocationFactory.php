@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Customer;
 use App\Models\Location;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -26,6 +27,7 @@ class LocationFactory extends Factory
             "province" => $this->faker->word(),
             "district" => $this->faker->word(),
             "reference" => $this->faker->sentence(),
+            "customer_id" => Customer::all()->random()->id
         ];
     }
 }

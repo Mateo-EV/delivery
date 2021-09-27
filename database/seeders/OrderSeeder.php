@@ -21,7 +21,6 @@ class OrderSeeder extends Seeder
     public function run()
     {
         $orders = Order::factory(50)->create();
-        $locations = Location::all();
         $customers = Customer::all();
         $laboratories = Laboratory::all();
         $motorcyclists = Motorcyclist::all();
@@ -29,11 +28,10 @@ class OrderSeeder extends Seeder
             $query->where('name', 'Receptor');
         })->get();
 
-        foreach($locations as $key => $location){
-            $location->customer()->associate($customers[$key]);
-        }
+        
 
         $orders = Order::all();
+        $locations = Location::all();
 
         foreach($orders as $order){
             $userR = rand(0, count($users)-1);
